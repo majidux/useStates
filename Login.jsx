@@ -1,3 +1,5 @@
+/** This is login page that show how to use it */
+
 import React from "react";
 import { login } from "./utils";
 import "./style.css";
@@ -12,11 +14,18 @@ const initialState = {
 };
 
 export default function LoginUseReducer() {
+  /** Use this hook like normal useState
+   * Destructor two argument state and dispatch
+   * Dispatch is going to work just like redux dispatch and change the state
+   */
   const { state, dispatch } = useStrategy(initialState);
   const { username, password, isLoading, error, isLoggedIn } = state;
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    /** You need to pass an object includes type (work as case in switch:case redux reducer)
+     * and payload which includes your states (exactly works like redux dispatch)
+     */
     dispatch({
       type: "login",
       payload: {
@@ -93,13 +102,6 @@ export default function LoginUseReducer() {
             </button>
           </form>
         )}
-        <div className="names">
-          username:{`${username}`}
-          password:{`${password}`}
-          isLoading:{`${isLoading}`}
-          error:{`${error}`}
-          isLoggedIn:{`${isLoggedIn}`}
-        </div>
       </div>
     </div>
   );
