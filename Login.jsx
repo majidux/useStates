@@ -3,7 +3,7 @@
 import React from "react";
 import { login } from "./utils";
 import "./style.css";
-import { useStrategy } from "./CustomUseReducer";
+import { useStates } from "./CustomUseReducer";
 
 const initialState = {
   username: "",
@@ -18,7 +18,7 @@ export default function LoginUseReducer() {
    * Destructor two argument state and dispatch
    * Dispatch is going to work just like redux dispatch and change the state
    */
-  const { state, dispatch } = useStrategy(initialState);
+  const { state, dispatch } = useStates(initialState);
   const { username, password, isLoading, error, isLoggedIn } = state;
 
   const onSubmit = async (e) => {

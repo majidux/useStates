@@ -11,7 +11,7 @@ export function actionReducer(state, action) {
   };
 }
 
-export function useStrategy(initialState) {
+export function useStates(initialState) {
   const [state, setState] = useReducer(actionReducer, initialState);
   const handleChange = (type) => {
     setState(type);
