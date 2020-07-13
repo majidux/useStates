@@ -12,13 +12,11 @@ const initialState = {
 };
 
 const GoodExample = () => {
-  const { state, dispatch } = useStates(initialState);
+  const { state, setState } = useStates(initialState);
   const { name, surname, email, phone, password, rePassword } = state;
   const onChange = ({ target: { name, value } }) => {
-    dispatch({
-      payload: {
-        [name]: value,
-      },
+    setState({
+      [name]: value,
     });
   };
   return (

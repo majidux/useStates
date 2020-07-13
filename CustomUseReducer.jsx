@@ -4,20 +4,20 @@
  * Use for complex forms or components they have a lot of states
  */
 import { useReducer } from "react";
-export function actionReducer(state, action) {
+const actionReducer = (state, action) => {
   return {
     ...state,
-    ...action.payload,
+    ...action,
   };
-}
+};
 
-export function useStates(initialState) {
+export const useStates = (initialState) => {
   const [state, setState] = useReducer(actionReducer, initialState);
   const handleChange = (type) => {
     setState(type);
   };
   return {
     state,
-    dispatch: handleChange,
+    setState: handleChange,
   };
-}
+};
