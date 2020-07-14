@@ -12,12 +12,15 @@ const initialState = {
 };
 
 const GoodExample = () => {
-  const { state, setState } = useStates(initialState);
+  const [state, setState] = useStates(initialState);
   const { name, surname, email, phone, password, rePassword } = state;
   const onChange = ({ target: { name, value } }) => {
-    setState({
-      [name]: value,
-    });
+    setState(
+      {
+        [name]: value,
+      },
+      () => console.log("Callback function")
+    );
   };
   return (
     <>
