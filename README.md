@@ -11,9 +11,9 @@ const initialState = {
   name: "",
 };
 
-const GoodExample = () => {
+const Example = () => {
   const [state, setState] = useStates(initialState);
-  const { name, surname, email, phone, password, rePassword } = state;
+  const { name } = state;
   const onChange = ({ target: { name, value } }) => {
     setState(
       {
