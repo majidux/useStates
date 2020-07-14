@@ -4,7 +4,7 @@ A custom hook based on useReducer and inspired by strategy design pattern for ha
 
 
 This is how you are going to use : =>
-
+```javascript
 import { useStates } from "./CustomUseReducer";
 
 const initialState = {
@@ -28,3 +28,4 @@ const GoodExample = () => {
     </>
   );
 };
+```
