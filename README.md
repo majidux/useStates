@@ -12,7 +12,7 @@ const initialState = {
 };
 
 const Example = () => {
-  const [state, setState] = useStates(initialState);
+  const [state, setState] = useStates<any>(initialState);
   const { name } = state;
   const onChange = ({ target: { name, value } }) => {
     setState(
