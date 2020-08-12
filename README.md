@@ -3,7 +3,7 @@
 A custom hook based on useReducer and inspired by strategy design pattern for having multiple states
 
 
-This is how you are going to use : =>
+This is how you are going to use it : =>
 ```javascript
 import { useStates } from "./CustomUseReducer";
 
