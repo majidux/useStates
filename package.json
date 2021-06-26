@@ -1,0 +1,27 @@
+{
+  "name": "use-states",
+  "version": "1.0.0",
+  "description": "react use states",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majidux/useStates.git"
+  },
+  "keywords": [
+    "npm",
+    "react"
+  ],
+  "author": "majid darvish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majidux/useStates/issues"
+  },
+  "homepage": "https://github.com/majidux/useStates#readme",
+  "peerDependencies": {
+    "react": "17.0.2"
+  }
+}

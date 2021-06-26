@@ -3,9 +3,20 @@
 A custom hook based on useReducer and inspired by strategy design pattern for having multiple states
 
 
+###### With npm:
+```javascript
+npm install --save fibonacci_sequence
+```
+
+###### With yarn:
+```javascript
+yarn add fibonacci_sequence
+```
+
+
 This is how you are going to use it : =>
 ```javascript
-import { useStates } from "./CustomUseReducer";
+import { useStates } from "use-states";
 
 const initialState = {
   name: "",
