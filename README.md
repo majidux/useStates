@@ -5,12 +5,12 @@ A custom hook based on useReducer and inspired by strategy design pattern for ha
 
 ###### With npm:
 ```javascript
-npm install --save fibonacci_sequence
+npm install --save use-states
 ```
 
 ###### With yarn:
 ```javascript
-yarn add fibonacci_sequence
+yarn add use-states
 ```
 
 
