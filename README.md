@@ -5,18 +5,18 @@ A custom hook based on useReducer and inspired by strategy design pattern for ha
 
 ###### With npm:
 ```javascript
-npm install --save use-states
+npm install --save use-states-react
 ```
 
 ###### With yarn:
 ```javascript
-yarn add use-states
+yarn add use-states-react
 ```
 
 
 This is how you are going to use it : =>
 ```javascript
-import { useStates } from "use-states";
+import { useStates } from "use-states-react";
 
 const initialState = {
   name: "",
