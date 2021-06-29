@@ -1,12 +1,12 @@
 {
   "name": "use-states-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react use states",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
     "build": "tsc -p .",
-    "yarn build && npm publish && git push"
+    "pub": "yarn build && npm publish && git push"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/majidux/useStates#readme",
   "peerDependencies": {
-    "react": "17.0.2"
+    "react": "17.0.2",
+    "@types/react": "^17.0.11"
   }
 }
