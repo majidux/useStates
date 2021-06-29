@@ -1,11 +1,12 @@
 {
   "name": "use-states-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react use states",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "yarn build && npm publish && git push"
   },
   "repository": {
     "type": "git",
